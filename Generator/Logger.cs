@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Net.Sockets;
+using System.Threading.Tasks;
 
 namespace Generator;
 
@@ -9,6 +10,7 @@ public static class Logger
   private static async void Send(string message)
   {
     try {
+      await Task.Yield();
       using var cli = new TcpClient();
       await cli.ConnectAsync("localhost", 17171);
       using var stream = cli.GetStream();

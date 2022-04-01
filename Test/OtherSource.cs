@@ -1,8 +1,10 @@
 namespace Test;
 
-/// <summary>
-/// Typing any symbol in any place causes generation of whole project!!!
-/// </summary>
+/*
+
+1';l';l';l';l';l';l';lgggg//////////////////////////////////////////
+
+ */
 public class OtherSource
 {
   
